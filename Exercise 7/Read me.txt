@@ -1,0 +1,20 @@
+# **Abstraction**
+ 
+Abstraction is a fundamental concept in object-oriented programming that allows us to define a blueprint for other classes. It helps in hiding the complex implementation details and exposing only the necessary parts of an object. In Java, abstraction can be achieved using abstract classes and interfaces.
+ 
+
+### ** *Explanation of the Code* **
+ 
+
+1.  **Abstract Class**: The `Animal` class is declared as abstract, which means it cannot be instantiated directly. It serves as a template for other classes.
+     
+2.  **Abstract Method**: The `sound()` method is declared without a body, indicating that subclasses must provide their own implementation.
+     
+3.  **Subclasses**: The `Dog` and `Cat` classes extend the `Animal` class and provide specific implementations of the `sound()` method. This is where polymorphism comes into play, as the same method name behaves differently based on the object that calls it.
+     
+4.  **Main Class**: In the `Main` class, we create instances of `Dog` and `Cat` using the `Animal` reference type. This demonstrates how abstraction allows us to work with objects at a higher level without needing to know their specific implementations.
+     
+
+### ** *Summary* **
+ 
+In summary, abstraction in Java allows us to define a common interface for different classes while hiding the implementation details. By creating an abstract class `Animal` with an abstract method `sound()`, and implementing this method in the `Dog` and `Cat` classes, we can see how different animals can produce different sounds while adhering to a common structure. This not only promotes code reusability but also enhances maintainability and scalability in our applications.

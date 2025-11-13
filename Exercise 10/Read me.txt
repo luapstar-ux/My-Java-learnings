@@ -1,0 +1,38 @@
+### ***Understanding*** `static` and `final`
+ 
+
+### **1\. Static Variables**:
+ 
+Static variables are shared by all objects of a class, belonging to the class itself. They store common data for all instances, initialized when the class loads, and accessed without creating objects. Object composition means building complex objects like a Library using simpler ones like Books.
+ 
+
+### **2\. Final Variables**:
+ 
+A final variable in Java is a constant; once assigned a value, it cannot be changed. It must be initialized when declared or in the constructor, ensuring the value remains the same throughout the program
+ 
+
+### ** *Explanation of the Code* **
+ 
+
+1.  **Static Variable**:
+     
+    *   `private static String companyName = "Tech Innovations Inc.";` defines a static variable that holds the name of the company. This variable is shared across all instances of the `Company` class.
+         
+2.  **Final Variable**:
+     
+    *   `private final String REG_NO;` declares a final variable that will hold the registration number. It is initialized in the constructor, ensuring that it cannot be changed after the object is created.
+         
+3.  **Static Methods**:
+     
+    *   `public static void displayCompanyName()` is a static method that prints the company name. Since it is static, it can be called without creating an instance of the class.
+         
+    *   `public static void displayRegNo(Company company)` takes an instance of `Company` as a parameter and prints its registration number. This method demonstrates how to access the final variable from a static context.
+         
+4.  **Main Method**:
+     
+    *   In the `main` method, we first call `displayCompanyName()` to show the company name. Then, we create an instance of `Company` with a specific registration number and call `displayRegNo(myCompany)` to display that registration number.
+         
+
+### ** *Summary* **
+ 
+This example effectively demonstrates the use of `static` and `final` in Java. The static variable allows for shared data across instances, while the final variable ensures that certain values remain constant throughout the lifecycle of the object. By using static methods, we can access these variables without needing to instantiate the class, making our code cleaner and more efficient.

@@ -1,0 +1,16 @@
+# **Object Composition**
+ 
+
+### ** *Explanation of the Code* **
+ 
+
+1.  **Book Class**: This class encapsulates the properties of a book and provides a method to display its details.
+     
+2.  **Library Class**: This class manages a collection of `Book` objects. It has methods to add a book and display all books.
+     
+3.  **Main Class**: This is where we create instances of `Library` and `Book`, add books to the library, and display them.
+     
+
+### ** *Summary* **
+ 
+By using object composition, we have created a simple yet effective library management system in Java. The `Library` class holds multiple `Book` objects, allowing us to manage them easily. This approach not only promotes code reusability but also enhances the organization of our code.
